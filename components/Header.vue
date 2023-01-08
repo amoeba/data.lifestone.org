@@ -1,34 +1,14 @@
 <template>
   <header>
-    <div class="header-left">
+    <div class="header-top">
       <h1>
-        <NuxtLink to="/">data.lifestoned.org</NuxtLink>
+        <NuxtLink to="/">data</NuxtLink>
+        <NuxtLink to="/">.lifestoned.org</NuxtLink>
       </h1>
-    </div>
-    <div class="header-right">
-      <!-- Desktop -->
-      <div class="header-right-wide">
-        <Nav />
-        <div class="search-container">
-          <input id="search" type="text" placeholder="Search" />
-        </div>
-      </div>
-      <!-- Mobile -->
-      <div class="header-right-narrow">
-        <nav class="burger">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
-            <rect width="256" height="256" fill="none"></rect>
-            <path d="M48.8,96A8,8,0,0,1,41,86.3C47.4,55.5,83.9,32,128,32s80.6,23.5,87,54.3a8,8,0,0,1-7.8,9.7Z"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-            <path d="M208,168v16a32,32,0,0,1-32,32H80a32,32,0,0,1-32-32V168" fill="none" stroke="#000000"
-              stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-            <polyline points="28 176 68 160 108 176 148 160 188 176 228 160" fill="none" stroke="#000000"
-              stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
-            <line x1="24" y1="128" x2="232" y2="128" fill="none" stroke="#000000" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="16"></line>
-          </svg>
-        </nav>
+      <div class="search-container">
+        <input class="search" type="text" placeholder="Search" />
       </div>
     </div>
+    <Nav />
   </header>
 </template>
