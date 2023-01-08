@@ -31,7 +31,10 @@
   </p>
   <p>
   <h4>Textarea</h4>
-  <textarea rows="8" cols="40"></textarea>
+
+  <form>
+    <label>Label <textarea rows="8" cols="40"></textarea></label>
+  </form>
   </p>
 
   <p>This is my boss, Jonathan Hart, a self-made millionaire, he's quite a guy. This is Mrs H., she's gorgeous,
