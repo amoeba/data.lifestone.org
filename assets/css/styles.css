@@ -23,6 +23,7 @@
     url('/fonts/Inter-Regular.woff') format('woff');
   font-style: normal;
   font-weight: 400;
+  font-display: swap
 }
 
 
@@ -32,6 +33,7 @@
     url('/fonts/Inter-Bold.woff') format('woff');
   font-style: normal;
   font-weight: 600;
+  font-display: swap
 }
 
 /* Reset */
