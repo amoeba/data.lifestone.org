@@ -1,0 +1,217 @@
+/* Variables */
+:root {
+  --background-color: hsl(0, 0, 100%);
+  --link-color: hsl(0, 0%, 25%);
+  --link-color-active: hsl(0, 0, 0);
+  --text-color: hsl(0, 0, 0);
+  --border-color: hsl(0, 0%, 75%);
+  --background-primary: hsl(213, 100%, 90%);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+    url('/fonts/Inter-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: "Inter";
+  src: url('/fonts/Inter-Bold.woff2') format('woff2'),
+    url('/fonts/Inter-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box
+}
+
+/* Top-level elements */
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+main,
+footer {
+  gap: 1.5em;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+
+  border: 1px solid hsl(212, 77%, 69%);
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.20);
+  font-size: inherit;
+  color: hsl(212, 59%, 48%);
+  background-color: var(--background-primary);
+}
+
+header .header-left {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header a,
+header a:visited {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+#search {
+  border-radius: 5px;
+  border-color: var(--border-color);
+  border-width: 1px;
+  font-size: inherit;
+}
+
+header h1 {
+  font-size: 100%;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5em 0.5em;
+}
+
+.header-right-wide {
+  display: none;
+}
+
+.header-right-narrow {
+  display: flex;
+  justify-content: right;
+  align-items: stretch;
+}
+
+@media screen and (min-width: 700px) {
+  header .header-right-wide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: right;
+  }
+
+  .header-right-narrow {
+    display: none;
+  }
+}
+
+nav ul {
+  background-color: var(--background-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: block;
+  padding: 0.5em 0;
+}
+
+nav li:hover {
+  cursor: pointer;
+}
+
+nav a,
+nav a:visited {
+  text-decoration: none;
+  color: var(--link-color);
+  display: block;
+}
+
+nav a:hover {
+  color: var(--link-color-active);
+}
+
+header .search-container {
+  padding: 0.25em;
+}
+
+nav.burger {
+  padding: 0.25em;
+}
+
+nav
+main {
+  border-radius: 5px;
+  line-height: 1.5em;
+}
+
+footer {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+}
+
+/* Forms / Input / etc */
+input,
+button,
+textarea {
+  border: 1px solid hsl(212, 77%, 69%);
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.20);
+  font-size: inherit;
+  padding: 0.2em 0.5em;
+}
+
+input[type=submit],
+button {
+  cursor: pointer;
+}
+
+textarea {
+  line-height: 1.5em;
+}
+
+button {
+  color: hsl(212, 59%, 48%);
+  background-color: var(--background-primary)
+}
+
+button.button-alt {
+  color: hsl(100, 100%, 33%);
+  background-color: hsl(100, 55%, 90%);
+  border: 1px solid hsl(100, 77%, 69%);
+}
+
+button.button-alt:hover {
+  border: 1px solid hsl(100, 77%, 50%);
+}
+
+button:hover {
+  transform: translateY(-0.5px);
+  border: 1px solid hsl(212, 77%, 60%);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.20);
+}
+
+.button-group {
+  display: flex;
+  gap: 1em;
+}
+
+form {
+  display: flex;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+label {
+  display: flex;
+  gap: 0.5em;
+  cursor: pointer;
+}
