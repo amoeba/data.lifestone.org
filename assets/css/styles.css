@@ -85,24 +85,10 @@ header {
   padding: 1em 0;
 }
 
-header .header-top {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-header .header-left {
+header .header-top .header-left {
   align-items: center;
   display: flex;
   gap: 0.25em;
-}
-
-header .header-right {
-  display: flex;
-  justify-content: flex-end;
-}
-
-header .header-left div:nth-child(2) {
-  align-self: flex-end;
 }
 
 header a,
@@ -131,6 +117,7 @@ header .search {
   border-color: var(--border);
   border-width: 1px;
   font-size: inherit;
+  width: 100%;
 }
 
 header nav {
@@ -167,6 +154,29 @@ footer {
   gap: 3em;
   justify-content: center;
   padding: 1em 0;
+}
+
+/* Responsive Design Breakpoints */
+
+/* Breakpoint: Larger Mobile */
+@media screen and (min-width: 425px) {
+  header .header-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header .header-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header .header-left div:nth-child(2) {
+    align-self: flex-end;
+  }
+
+  header .search {
+    width: auto;
+  }
 }
 
 /* Forms / Input / etc */
