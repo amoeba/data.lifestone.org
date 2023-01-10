@@ -2,13 +2,13 @@
   <nav>
     <ul>
       <li>
-        <NuxtLink to="/drudges">Drudges</NuxtLink>
+        <NuxtLink to="/spells">Spells</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/banderlings">Banderlings</NuxtLink>
+        <NuxtLink to="/landblocks">Landblocks</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/mosswarts">Mosswarts</NuxtLink>
+        <NuxtLink to="/about">About</NuxtLink>
       </li>
     </ul>
   </nav>

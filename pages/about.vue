@@ -1,4 +1,5 @@
 <template>
-  <h2>Drudges</h2>
+  <h2>About</h2>
+  <p>TODO</p>
   <NuxtLink to="/">↩ Go Home</NuxtLink>
 </template>
