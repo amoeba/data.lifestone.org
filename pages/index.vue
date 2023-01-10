@@ -6,7 +6,10 @@
     do. Ulysses — like a bolt of thunder from the blue. Ulysses — always fighting all the evil forces bringing peace and
     justice to all.</p>
 
-  <h3>Header 3</h3>
+  <h3>Components</h3>
+  <Counter />
+
+  <h3>Lists</h3>
   <ul>
     <li>List item</li>
     <li>List item</li>
