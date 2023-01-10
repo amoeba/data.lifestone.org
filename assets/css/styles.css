@@ -147,6 +147,7 @@ header nav a:hover {
 
 main {
   line-height: 1.5em;
+  line-break: normal;
 }
 
 footer {
