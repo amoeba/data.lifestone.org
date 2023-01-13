@@ -2,6 +2,7 @@
 :root {
   --background: hsl(0, 0%, 14%);
   --background-alt: hsla(0, 0%, 20%, 0.5);
+  --border: hsl(0, 0%, 50%);
   --border-accent: hsl(200, 100%, 50%);
   --text: hsl(0, 0%, 80%);
   --link: hsl(196, 77%, 35%);
@@ -240,4 +241,62 @@ label {
   gap: 0.5em;
   cursor: pointer;
   max-width: 100%;
+}
+
+/* Component: Section */
+.section {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section > div {
+  padding: 0.25em 0.5em;
+}
+
+.section .section-head {
+  background-color: var(--background-alt);
+  border-bottom: 1px solid var(--border);
+  font-weight: bold;
+}
+
+.section .section-body {
+  border-bottom: 1px solid var(--border);
+}
+
+.section .section-foot {
+  background-color: var(--background-alt);
+  font-weight: bold;
+}
+
+/* Component: TabbedSection */
+.tabs {
+  background-color: var(--background-alt);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.tab button {
+  border: none;
+  background-color: inherit;
+  padding: 0.25em 0.5em;
+}
+
+/* FIXME: Is this working? */
+.tab.selected {
+  font-weight: bold;
+}
+
+.tab-contents {
+  width: 100%;
+}
+
+.tab-content {
+  border: 1px solid var(--border);
+  border-radius: 0 0 5px 5px;
+  padding: 0.25em 0.5em;
 }
