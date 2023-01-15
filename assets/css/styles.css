@@ -284,11 +284,11 @@ label {
 .tab button {
   border: none;
   background-color: inherit;
+  line-height: inherit;
   padding: 0.25em 0.5em;
 }
 
-/* FIXME: Is this working? */
-.tab.selected {
+.tab.selected button {
   font-weight: bold;
 }
 
