@@ -61,6 +61,14 @@ svg {
   display: block;
 }
 
+details {
+  padding: 0.25em 0.5em;
+}
+
+details > summary {
+  cursor: pointer;
+}
+
 /* Top-level elements */
 body {
   border-top: 3px solid var(--border-accent);
@@ -386,4 +394,18 @@ tbody tr:last-child td:last-child {
 
 .callout .callout-content {
   background-color: var(--background-alt);
+}
+
+/* Component: Code */
+.code {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border);
+  padding: 1em;
+
+}
+
+.code pre {
+  margin: 0;
+  padding: 0;
+  overflow-x: scroll;
 }
