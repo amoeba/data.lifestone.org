@@ -4,6 +4,7 @@
   --background-alt: hsla(0, 0%, 20%, 0.5);
   --border: hsl(0, 0%, 50%);
   --border-accent: hsl(200, 100%, 50%);
+  --border-radius: 5px;
   --text: hsl(0, 0%, 80%);
   --link: hsl(196, 77%, 35%);
   --link-visited: hsl(196, 77%, 35%);
@@ -114,7 +115,7 @@ header h1 a:first-child {
 }
 
 header .search {
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   border-color: var(--border);
   border-width: 1px;
   font-size: inherit;
@@ -187,7 +188,7 @@ button,
 textarea {
   background-color: var(--background-alt);
   border: 1px solid var(--button-border);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   font-size: inherit;
   padding: 0.2em 0.5em;
 }
@@ -246,7 +247,7 @@ label {
 /* Component: Section */
 .section {
   border: 1px solid var(--border);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
 }
@@ -275,7 +276,7 @@ label {
   background-color: var(--background-alt);
   border: 1px solid var(--border);
   border-bottom: none;
-  border-radius: 5px 5px 0 0;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
   display: flex;
   overflow-x: scroll;
 }
@@ -297,6 +298,6 @@ label {
 
 .tab-content {
   border: 1px solid var(--border);
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
   padding: 0.25em 0.5em;
 }
