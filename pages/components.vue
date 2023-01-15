@@ -68,7 +68,6 @@
     </tbody>
   </table>
   <h3>Columnar Layouts</h3>
-  TODO
   <h4>Two-Column Layout</h4>
   <TwoCol>
     <template #left>
@@ -78,4 +77,10 @@
       Right Side
     </template>
   </TwoCol>
+  <h4>Callout</h4>
+  <Callout>
+    <template #content>
+      Ulysses, Ulysses — Soaring through all the galaxies. In search of Earth, flying in to the night.
+    </template>
+  </Callout>
 </template>

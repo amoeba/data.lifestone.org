@@ -2,6 +2,7 @@
 :root {
   --background: hsl(0, 0%, 14%);
   --background-alt: hsla(0, 0%, 20%, 0.5);
+  --background-alt-dark: hsla(0, 0%, 10%, 0.75);
   --border: hsl(0, 0%, 50%);
   --border-accent: hsl(200, 100%, 50%);
   --border-radius: 5px;
@@ -54,6 +55,10 @@ a:visited {
 
 a:hover {
   color: var(--link-active);
+}
+
+svg {
+  display: block;
 }
 
 /* Top-level elements */
@@ -360,4 +365,25 @@ tbody tr:last-child td:last-child {
 .two-col .two-col-left {
   background-color: var(--background-alt);
   border-right: var(--border);
+}
+
+/* Component: Callout */
+.callout {
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  display: grid;
+  grid-template-columns: 2.25em auto;
+}
+
+.callout > div {
+  padding: 0.25em 0.5em;
+}
+
+.callout .callout-left {
+  background-color: var(--background-alt-dark);
+  display: flex;
+}
+
+.callout .callout-content {
+  background-color: var(--background-alt);
 }
