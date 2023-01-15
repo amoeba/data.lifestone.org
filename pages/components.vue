@@ -20,7 +20,7 @@
   </Section>
 
   <h3>Tabbed Section Component</h3>
-  <TabbedSection>
+  <TabbedSection initialTab="hello">
     <template #tabs>
       <Tab id="hello">Hello</Tab>
       <Tab id="world">World</Tab>

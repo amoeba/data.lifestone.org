@@ -2,15 +2,18 @@
 import { computed } from 'vue'
 
 export default {
+  props: {
+    initialTab: String
+  },
   data() {
     return {
-      currentTab: "changeme",
+      currentTab: null,
     };
   },
   provide() {
     return {
       selectTab: this.selectTab,
-      currentTab: computed(() => this.currentTab)
+      currentTab: computed(() => this.currentTab || this.initialTab)
     }
   },
   methods: {
