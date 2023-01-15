@@ -3,7 +3,7 @@ export default {
   props: {
     id: String
   },
-  inject: ['selectTab', 'currentTab'],
+  inject: ['currentTab', 'selectTab'],
   computed: {
     isSelected() {
       // FIXME: This will break in future Vue versions
