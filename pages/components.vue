@@ -69,4 +69,13 @@
   </table>
   <h3>Columnar Layouts</h3>
   TODO
+  <h4>Two-Column Layout</h4>
+  <TwoCol>
+    <template #left>
+      Left Side
+    </template>
+    <template #right>
+      Right Side
+    </template>
+  </TwoCol>
 </template>

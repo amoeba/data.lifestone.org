@@ -343,3 +343,21 @@ tbody tr:last-child td:last-child {
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   padding: 0.25em 0.5em;
 }
+
+/* Component: TwoCol (Two-Column Layout */
+.two-col {
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+}
+
+.two-col > div {
+  padding: 0.25em .5em;
+  width: 50%;
+}
+
+.two-col .two-col-left {
+  background-color: var(--background-alt);
+  border-right: var(--border);
+}
