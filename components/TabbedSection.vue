@@ -15,7 +15,6 @@ export default {
   },
   methods: {
     selectTab(event) {
-      console.log("selectTab", event);
       this.currentTab = event;
     }
   }
