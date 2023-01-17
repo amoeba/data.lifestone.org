@@ -135,7 +135,7 @@ header .search {
 }
 
 header nav {
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 header nav ul {
